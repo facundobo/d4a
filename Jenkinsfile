@@ -19,7 +19,7 @@ pipeline{
 		}
 		stage('Deploy Container'){
 			steps{
-				sh 'sudo docker run -p 80:80 -- name Prueba1 --rm prueba'
+				sh 'sudo docker run -p 80:80 --name Prueba1 --rm prueba'
 			}
 		}
 	}
