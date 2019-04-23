@@ -6,7 +6,7 @@ peline{
                                 sh 'echo Starting...'
                         }
                 }
-                stage(Checking Docker'){
+                stage('Checking Docker'){
                         steps{
                                 sh 'sudo docker ps'
                         }
