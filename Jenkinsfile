@@ -20,6 +20,7 @@ pipeline{
 			steps{
 				sh 'sudo docker run -p8080 -- name Prueba1 --rm prueba
 			}
+
 		}
 	}
 }
