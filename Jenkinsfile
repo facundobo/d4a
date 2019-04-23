@@ -9,9 +9,13 @@ pipeline{
                 stage('Checking Docker'){
                         steps{
                                 sh 'sudo docker ps'
-				sh 'pwd'
-				sh 'cp -r d4a/code/Dockerfile /var/jenkins/home/workspace/Pipeline EDSI'
+								
                         }
                 }
+		stage('Build Docker'){
+			steps{
+				sh 'sudo docker build --tag=prueba .'
+			}
+		}
 	}
 }
